@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisGrupal.MainPage">
+
+    <ScrollView HorizontalOptions="Center">
+        <VerticalStackLayout
+     Padding="0,0"
+     Spacing="7"
+     HorizontalOptions="Center">
+            <Label Text="꧁༺ 𝓐𝓷𝓪𝓵𝓲𝓼𝓲𝓼 𝓭𝓮 𝓡𝓮𝓼𝓾𝓵𝓽𝓪𝓭𝓸𝓼(𝓰𝓻𝓾𝓹𝓪𝓵) ༻꧂" VerticalOptions="Center" HorizontalOptions="Center" FontSize="28" TextColor="White" Margin="0,20"/>
+
+            <!-- 🟪🟫 Bloque izquierdo (2x2) -->
+            <Grid Grid.Column="0" RowSpacing="5" ColumnSpacing="5" HorizontalOptions="Center">
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!--TERRESTRE-->
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                  Clicked="Button_Clicked" Grid.Row="0" Grid.Column="0" ImageSource="pares.jpg" >
+
+                </Button>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                 Clicked="Button_Clicked_1"  Grid.Row="0" Grid.Column="1" ImageSource="cuentar.jpg"/>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                  Clicked="Button_Clicked_4" Grid.Row="1" Grid.Column="0" ImageSource="tablas.jpg"/>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                  Clicked="Button_Clicked_3"  Grid.Row="1" Grid.Column="1" ImageSource="sueldo.jpg"/>
+            </Grid>
+
+
+            <!-- 🟥🟩 Bloque central (2x2) -->
+            <Grid Grid.Column="1" RowSpacing="5" ColumnSpacing="5" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+
+                <!--AEREO-->
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                Clicked="Button_Clicked_2"  Grid.Row="0" Grid.Column="0" ImageSource="langosta.jpg">
+
+                </Button>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                Clicked="Button_Clicked_5" Grid.Row="0" Grid.Column="1" ImageSource="dolares.jpg"/>
+
+
+            </Grid>
+
+            <!-- 🟧🟨 Bloque derecho (2x2) -->
+
+            <Grid Grid.Column="2" RowSpacing="10" ColumnSpacing="10" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
