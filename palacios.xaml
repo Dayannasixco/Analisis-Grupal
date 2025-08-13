@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisGrupal.palacios"
+             Title="palacios">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20,25,20,25" Spacing="25">
+
+            <!-- Header Elegante -->
+            <Frame BackgroundColor="#1c2128" CornerRadius="20" Padding="30" HasShadow="True">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="🦞" 
+                           FontSize="50" 
+                           HorizontalOptions="Center"/>
+                    <Label Text="La Langosta Ahumada" 
+                           FontSize="32" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#ff6b35" />
+                    <Label Text="Banquetes de Excelencia" 
+                           FontSize="16" 
+                           HorizontalOptions="Center"
+                           TextColor="#ffa726"
+                           FontAttributes="Italic" />
+                    <BoxView HeightRequest="2" 
+                             BackgroundColor="#ff6b35" 
+                             WidthRequest="120" 
+                             HorizontalOptions="Center"
+                             Margin="0,10,0,0" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tarifas Información -->
+            <Frame BackgroundColor="#21262d" CornerRadius="15" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="📊 Nuestras Tarifas" 
+                           FontSize="20" 
+                           FontAttributes="Bold"
+                           TextColor="#ffa726"
+                           HorizontalOptions="Center" />
+
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto" 
+                          ColumnDefinitions="*,Auto" 
+                          RowSpacing="10"
+                          ColumnSpacing="15">
+
+                        <Label Grid.Row="0" Grid.Column="0" 
+                               Text="Hasta 200 personas:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Label Grid.Row="0" Grid.Column="1" 
+                               Text="$95.00" 
+                               TextColor="#4ade80" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" 
+                               Text="201 - 300 personas:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Label Grid.Row="1" Grid.Column="1" 
+                               Text="$85.00" 
+                               TextColor="#60a5fa" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <Label Grid.Row="2" Grid.Column="0" 
+                               Text="Más de 300 personas:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Label Grid.Row="2" Grid.Column="1" 
+                               Text="$75.00" 
+                               TextColor="#f59e0b" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <BoxView Grid.Row="3" Grid.ColumnSpan="2" 
+                                 HeightRequest="1" 
+                                 BackgroundColor="#30363d" 
+                                 Margin="0,10,0,0"/>
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Calculadora de Presupuesto -->
+            <Frame BackgroundColor="#21262d" CornerRadius="15" Padding="25" HasShadow="True">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="💰 Calculadora de Presupuesto" 
+                           FontSize="20" 
+                           FontAttributes="Bold"
+                           TextColor="#ffa726"
+                           HorizontalOptions="Center" />
+
+                    <!-- Input de Personas -->
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="👥 Número de Personas:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Entry x:Name="entryPersonas" 
+                               Placeholder="Ingrese el número de invitados"
+                               PlaceholderColor="#7d8590"
+                               TextColor="#e6edf3"
+                               BackgroundColor="#30363d"
+                               FontSize="18"
+                               Keyboard="Numeric"
+                               TextChanged="OnPersonasChanged"/>
+                    </VerticalStackLayout>
+
+                    <!-- Input del Cliente -->
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="👤 Nombre del Cliente:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Entry x:Name="entryCliente" 
+                               Placeholder="Nombre del cliente o empresa"
+                               PlaceholderColor="#7d8590"
+                               TextColor="#e6edf3"
+                               BackgroundColor="#30363d"
+                               FontSize="18"/>
+                    </VerticalStackLayout>
+
+                    <!-- Input del Evento -->
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="🎉 Tipo de Evento:" 
+                               TextColor="#e6edf3" 
+                               FontSize="16"/>
+                        <Entry x:Name="entryEvento" 
+                               Placeholder="Boda, Cumpleaños, Corporativo, etc."
+                               PlaceholderColor="#7d8590"
+                               TextColor="#e6edf3"
+                               BackgroundColor="#30363d"
+                               FontSize="18"/>
+                    </VerticalStackLayout>
+
+                    <!-- Botón Calcular -->
+                    <Button Text="🧮 Calcular Presupuesto" 
+                            BackgroundColor="#ff6b35" 
+                            TextColor="White"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            HeightRequest="55"
+                            Clicked="OnCalcularClicked"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Resultado del Presupuesto -->
+            <Frame x:Name="frameResultado" 
+                   BackgroundColor="#1a472a" 
+                   CornerRadius="15" 
+                   Padding="25" 
+                   HasShadow="True"
+                   IsVisible="False">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="📋 Presupuesto Generado" 
+                           FontSize="20" 
+                           FontAttributes="Bold"
+                           TextColor="#4ade80"
+                           HorizontalOptions="Center" />
+
+                    <Frame BackgroundColor="#0d1b0d" CornerRadius="10" Padding="20">
+                        <VerticalStackLayout Spacing="12">
+                            <Label x:Name="lblCliente" 
+                                   Text="Cliente: [Nombre]" 
+                                   TextColor="#e6edf3" 
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+
+                            <Label x:Name="lblEvento" 
+                                   Text="Evento: [Tipo]" 
+                                   TextColor="#e6edf3" 
+                                   FontSize="16"/>
+
+                            <Label x:Name="lblPersonas" 
+                                   Text="Número de invitados: [0]" 
+                                   TextColor="#e6edf3" 
+                                   FontSize="16"/>
+
+                            <Label x:Name="lblTarifa" 
+                                   Text="Tarifa por persona: $[0.00]" 
+                                   TextColor="#ffa726" 
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+
+                            <BoxView HeightRequest="1" 
+                                     BackgroundColor="#30363d" 
+                                     Margin="0,5"/>
+
+                            <Label x:Name="lblTotal" 
+                                   Text="TOTAL: $[0.00]" 
+                                   TextColor="#4ade80" 
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Botones de Acción -->
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+                        <Button Grid.Column="0" 
+                                Text="📧 Enviar Cotización" 
+                                BackgroundColor="#0969da" 
+                                TextColor="White"
+                                FontSize="14"
+                                CornerRadius="8"
+                                Clicked="OnEnviarClicked"/>
+
+                        <Button Grid.Column="1" 
+                                Text="🔄 Nueva Cotización" 
+                                BackgroundColor="#6e7681" 
+                                TextColor="White"
+                                FontSize="14"
+                                CornerRadius="8"
+                                Clicked="OnNuevaClicked"/>
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Información Adicional -->
+            <Frame BackgroundColor="#21262d" CornerRadius="15" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="ℹ️ Información Adicional" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="#ffa726"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="• Incluye servicio completo de banquete"
+                           TextColor="#e6edf3" 
+                           FontSize="14"/>
+                    <Label Text="• Montaje y desmontaje de mesas"
+                           TextColor="#e6edf3" 
+                           FontSize="14"/>
+                    <Label Text="• Personal especializado en servicio"
+                           TextColor="#e6edf3" 
+                           FontSize="14"/>
+                    <Label Text="• Precios sujetos a cambios sin previo aviso"
+                           TextColor="#f85149" 
+                           FontSize="12"
+                           FontAttributes="Italic"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
