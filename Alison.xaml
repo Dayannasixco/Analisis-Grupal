@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisGrupal.Alison"
+             Title="Alison">
+  
+
+    <ScrollView>
+        <Grid Padding="20" ColumnSpacing="15" RowSpacing="15">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#5A3A8E" Offset="0.0" />
+                    <GradientStop Color="#C5A4E5" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <!-- Definimos 5 filas y 2 columnas -->
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Tabla del 1 -->
+            <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟙" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟏 = 𝟏   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟐 = 𝟐   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟑 = 𝟑   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟒 = 𝟒   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟓 = 𝟓   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟔 = 𝟔   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟕 = 𝟕   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟖 = 𝟖   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟗 = 𝟗   ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏 𝐱 𝟏𝟎 = 𝟏𝟎 ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 2 -->
+            <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟚" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text=" 𝟐 𝐱 𝟏 = 𝟐   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text=" 𝟐 𝐱 𝟐 = 𝟒   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟑 = 𝟔    🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟒 = 𝟖    🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟓 = 𝟏𝟎   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟔 = 𝟏𝟐   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟕 = 𝟏𝟒   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟖 = 𝟏𝟔   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟐 𝐱 𝟗 = 𝟏𝟖   🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Text="𝟐 𝐱 𝟏𝟎 = 𝟐𝟎  🔅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 3 -->
+            <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟛" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟏 = 𝟑   💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟐 = 𝟔   💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟑 = 𝟗   💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟒 = 𝟏𝟐  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟓 = 𝟏𝟓  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟔 = 𝟏𝟖  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟕 = 𝟐𝟏  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟖 = 𝟐𝟒  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟗 = 𝟐𝟕  💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟑 𝐱 𝟏𝟎 = 𝟑𝟎 💫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 4 -->
+            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟜" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟏 = 𝟒  ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟐 = 𝟖  ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟑 = 𝟏𝟐 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟒 = 𝟏𝟔 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟓 = 𝟐𝟎 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟔 = 𝟐𝟒 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟕 = 𝟐𝟖 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟖 = 𝟑𝟐 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟗 = 𝟑𝟔 ✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟒 𝐱 𝟏𝟎 = 𝟒𝟎✔" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 5 -->
+            <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟝" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟏 = 𝟓   🔴" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟐 = 𝟏𝟎 🔵" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟑 = 𝟏𝟓 🟡" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟒 = 𝟐𝟎 ⚫" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟓 = 𝟐𝟓 🟠" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟔 = 𝟑𝟎 🟢" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟕 = 𝟑𝟓 🔵" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟖 = 𝟒𝟎 🟣" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟗 = 𝟒𝟓 🔴" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟓 𝐱 𝟏𝟎 = 𝟓𝟎🟣" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 6 -->
+            <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟞" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟏 = 𝟔 🚀" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟐 = 𝟏𝟐🚁" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟑 = 𝟏𝟖🏎" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟒 = 𝟐𝟒✈" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟓 = 𝟑𝟎🛸" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟔 = 𝟑𝟔🚀" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟕 = 𝟒𝟐🚲" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟖 = 𝟒𝟖🏍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟗 = 𝟓𝟒🚢" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟔 𝐱 𝟏𝟎 = 𝟔𝟎🚀" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 7 -->
+            <Frame Grid.Row="3" Grid.Column="0" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟟" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟏 = 𝟕  🎆" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟐 = 𝟏𝟒 🎁" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟑 = 𝟐𝟏 🧨" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟒 = 𝟐𝟖 ✨" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟓 = 𝟑𝟓 🎇" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟔 = 𝟒𝟐 🎆" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟕 = 𝟒𝟗 ✨" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟖 = 𝟓𝟔 🎁" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟗 = 𝟔𝟑 🎇" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟕 𝐱 𝟏𝟎 = 𝟕𝟎✨" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 8 -->
+            <Frame Grid.Row="3" Grid.Column="1" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟠" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟏 = 𝟖  📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟐 = 𝟏𝟔 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟑 = 𝟐𝟒 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟒 = 𝟑𝟐 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟓 = 𝟒𝟎 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟔 = 𝟒𝟖 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟕 = 𝟓𝟔 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟖 = 𝟔𝟒 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟗 = 𝟕𝟐 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟖 𝐱 𝟏𝟎 = 𝟖𝟎 📍" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 9 -->
+            <Frame Grid.Row="4" Grid.Column="0" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟡" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟏 = 𝟗  📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟐 = 𝟏𝟖 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟑 = 𝟐𝟕 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟒 = 𝟑𝟔 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟓 = 𝟒𝟓 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟔 = 𝟓𝟒 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟕 = 𝟔𝟑 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟖 = 𝟕𝟐 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟗 = 𝟖𝟏 📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟗 𝐱 𝟏𝟎 = 𝟗𝟎📌" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tabla del 10 -->
+            <Frame Grid.Row="4" Grid.Column="1" BackgroundColor="#F6E7E7" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="𝕋𝕒𝕓𝕝𝕒 𝕕𝕖𝕝 𝟙𝟘" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟏 = 𝟏𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟐 = 𝟐𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟑 = 𝟑𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟒 = 𝟒𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟓 = 𝟓𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟔 = 𝟔𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟕 = 𝟕𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟖 = 𝟖𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟗 = 𝟗𝟎     ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Text="𝟏𝟎 𝐱 𝟏𝟎 = 𝟏𝟎𝟎  ✅" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
