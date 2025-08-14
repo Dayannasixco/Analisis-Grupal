@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisGrupal.Melissa"
+             Title="Melissa">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Conversor de Pesos Mexicanos a Dólares"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Ingresa la cantidad en pesos mexicanos:"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="pesosEntry"
+                Placeholder="Ej: 1000"
+                Keyboard="Numeric"
+                HorizontalOptions="Center"
+                WidthRequest="200"/>
+
+            <Button
+                x:Name="convertirButton"
+                Text="Convertir a Dólares"
+                Clicked="OnConvertirClicked"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="resultadoLabel"
+                Text="El resultado aparecerá aquí"
+                FontSize="22"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                IsVisible="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
